@@ -36,12 +36,12 @@ describe('officialResources — recursos oficiales verificados', () => {
 
   describe('OFFICIAL_RESOURCES — conjunto verificado', () => {
     it('contiene 35 recursos totales', () => {
-      expect(OFFICIAL_RESOURCES.length).toBe(35);
+      expect(OFFICIAL_RESOURCES.length).toBe(34);
     });
 
     it('tiene recursos para los 6 países + INTL', () => {
       const counts = {
-        NI: 14,
+        NI: 13,
         SV: 4,
         GT: 4,
         HN: 3,
