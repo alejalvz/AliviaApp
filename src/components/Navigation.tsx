@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect, useState, useCallback } from 'react';
 import { Home, Wind, PenTool, Compass, Trophy, LayoutGrid, LifeBuoy } from 'lucide-react';
 import { haptic } from '../utils/haptics';
 import { t, type DictKey } from '../i18n';

@@ -4,6 +4,8 @@ import { Header } from './components/Header';
 import { Navigation, type TabId } from './components/Navigation';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { InstallPrompt } from './components/InstallPrompt';
+import { SkipLink } from './components/SkipLink';
+import { LiveRegion } from './components/LiveRegion';
 import { UrgentHelpFAB } from './components/UrgentHelpFAB';
 import { Dashboard } from './views/Dashboard';
 import { HomeCompanion } from './components/HomeCompanion';
