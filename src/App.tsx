@@ -4,6 +4,7 @@ import { Header } from './components/Header';
 import { Navigation, type TabId } from './components/Navigation';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { InstallPrompt } from './components/InstallPrompt';
+import { UrgentHelpFAB } from './components/UrgentHelpFAB';
 import { Dashboard } from './views/Dashboard';
 import { HomeCompanion } from './components/HomeCompanion';
 
@@ -73,6 +74,7 @@ const ROUTE_MAP: Record<string, TabId> = {
   '/coping': 'coping',
   '/retos': 'retos',
   '/explore': 'explore',
+  '/resources': 'ayuda',
 };
 
 type AuthStatus = 'loading' | 'welcome' | 'onboarding' | 'app';
@@ -164,6 +166,7 @@ function AppShell({
           </ErrorBoundary>
         </main>
 
+        <UrgentHelpFAB />
         <Navigation activeTab={activeView} setActiveTab={handleTabChange} />
       </div>
 
