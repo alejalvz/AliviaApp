@@ -62,6 +62,7 @@ const isKnownRoute = (pathname: string): boolean =>
 import { getMe, getToken, setToken, type SafeUser } from './utils/auth';
 import { syncSystemBarsTheme } from './utils/systemBars';
 import { SyncToast } from './components/SyncToast';
+import { CrisisToast } from './components/CrisisToast';
 import { AppLock } from './components/AppLock';
 import { FirstRunSpotlight } from './components/FirstRunSpotlight';
 import { LoadingBrand } from './components/LoadingBrand';
@@ -170,6 +171,7 @@ function AppShell({
         <Navigation activeTab={activeView} setActiveTab={handleTabChange} />
       </div>
 
+      <CrisisToast />
       <InstallPrompt />
     </div>
   );
