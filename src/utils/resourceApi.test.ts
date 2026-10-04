@@ -33,7 +33,7 @@ describe('resourceApi — cliente offline-first de recursos', () => {
   it('loadOfficialResources devuelve el set verificado estatico', async () => {
     const resources = await loadOfficialResources();
     expect(resources).toEqual(OFFICIAL_RESOURCES);
-    expect(resources.length).toBe(35);
+    expect(resources.length).toBe(34);
   });
 
   it('loadResourceById encuentra recurso existente', async () => {
@@ -80,10 +80,10 @@ describe('resourceApi — cliente offline-first de recursos', () => {
 
   it('getReadyResources nunca lanza y filtra por pais', () => {
     const all = getReadyResources();
-    expect(all.length).toBe(35);
+    expect(all.length).toBe(34);
     const ni = getReadyResources({ country: 'NI' });
     expect(ni.every((r) => r.country === 'NI')).toBe(true);
-    expect(ni.length).toBe(14);
+    expect(ni.length).toBe(13);
   });
 
   it('getReadyResources filtra por problema (specialties)', () => {
